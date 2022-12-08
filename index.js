@@ -1,11 +1,28 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverse(word) {
+  //`abc` => `cba`
+  // const wordArray = word.split("");
+  // const reversedWordArray = wordArray.reverse();
+  // const reversedWord = reversedWordArray.join("");
+  // return reversedWord;
+  return word.split("").reverse().join("");
 }
 
+function isPalindrome(word) {
+  const reversedWord = reverse(word);
+  //check if input is the same as reverse
+  return word === reversedWord;
+}
 /* 
   Add your pseudocode here
-*/
 
+it means that if a word same as the reverse word return as true
+reverse input string
+
+check if input is the same as reverse
+return true
+else
+return false
+/*
 /*
   Add written explanation of your solution here
 */
